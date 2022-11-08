@@ -22,8 +22,8 @@ background: #2F303A;*/
   --hero-background-color: #2f303a;
   --footer-background-color: #2f303a;
   --footer-phone-color: hsla(0, 0%, 100%, 0.6);
-  --border-color:  #eeeeee;
-/*----Reset----*/
+  --border-color: #eeeeee;
+  /*----Reset----*/
 }
 *,
 *::before,
@@ -36,7 +36,7 @@ h2,
 h3 {
   margin: 0;
 }
-ul{
+ul {
   margin: 0;
   padding-left: 0;
 }
@@ -84,16 +84,35 @@ ul {
   color: var(--accent-color);
 }
 /*Навігація по сайту*/
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 .list {
   padding: 0;
   margin: 0;
 }
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   letter-spacing: 0.02em;
   font-weight: 500;
   line-height: 1.14;
 }
+.site-nav {
+  display: flex;
+  /*margin-left: 93px;*/
+}
+.site-nav .item-one {
+  margin-right: 50px;
+}
+.site-nav .item-one:last-child {
+  margin-right: 0px;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .site-nav .link.current {
@@ -112,8 +131,14 @@ ul {
 .contacts.list .e-mail:hover {
   color: var(--accent-color);
 }
+.contacts.list {
+  display: flex;
+}
+.contacts.list .item-one+.item-one {
+  margin-left: 50px;
+}
 /*Герой*/
-.hero { 
+.hero {
   color: var(--main-lite-color);
   background-color: var(--hero-background-color);
   letter-spacing: 0.06em;
@@ -124,10 +149,6 @@ ul {
   text-transform: uppercase;
   margin-bottom: 94px;
 }
-/*.hero-title {
-  margin-top: 0;
-  margin-bottom: 0;
-}*/
 
 /* Секції*/
 /*Головна сторінка*/
@@ -197,9 +218,9 @@ ul {
   line-height: 1.62;
   text-align: center;
   border: 0 solid transparent;
-    border-radius: 4px;
-    min-width: 73px;
-    padding: 6px 22px;
+  border-radius: 4px;
+  min-width: 73px;
+  padding: 6px 22px;
 }
 .button:hover,
 .button:focus {
@@ -216,14 +237,14 @@ ul {
   line-height: 1.88;
   min-width: 216px;
   cursor: pointer;
-    margin-top: 30px;
-    padding: 10px 32px;
-    border: 0 solid transparent;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+  padding: 10px 32px;
+  border: 0 solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button.second {
-  color:var(--main-lite-color);
+  color: var(--main-lite-color);
   background-color: var(--accent-color);
 }
 
@@ -254,7 +275,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.location.second{
+.location.second {
   line-height: 1.71;
   font-style: normal;
   color: var(--main-lite-color);
