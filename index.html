@@ -11,11 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" /
   </head>
   <body>
     <!--Шапка-->
     <header>
+      <div class="container">
       <nav>
         <a lang="en" href="./index.html" class="logo">
           <span class="logo-accent">Web</span>Studio
@@ -30,6 +32,7 @@
         <li><a href="tel:+380961111111" class="phone">+38 096 111 11 11</a></li>
         <li><a href="mailto:info@devstudio.com" class="e-mail">info@devstudio.com</a></li>
       </ul>
+      </div>
     </header>
     <main>
       <!--Герой-->
@@ -37,8 +40,9 @@
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="primary-button">Замовити послугу</button>
       </section>
+      <!--Наші переваги-->
       <section class="section">
-        <!--Наші переваги-->
+        <div class="container">  
         <h2 class="section-title">Наші переваги</h2>
         <ul class="feature-list">
           <li>
@@ -64,53 +68,70 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <section class="section">
         <!--Чим ми займаємося-->
-        <h2 class="section-title">Чим ми займаємося</h2>
+        <div class="container"> 
+        <h2 class="section-title">Чим ми займаємося</h2> 
         <ul>
           <li><img src="./images/box-1.jpg" alt="Фото Десктопні додатки" width="370" /></li>
           <li><img src="./images/box-2.jpg" alt="Фото Мобільні додатки" width="370" /></li>
           <li><img src="./images/box-3.jpg" alt="Фото Дизайнерські рішення" width="370" /></li>
         </ul>
+        </div>
       </section>
       <section class="comand-section">
         <!--Наша команда-->
         <h2 class="section-title">Наша команда</h2>
+        <div class="container"> 
         <ul>
-          <li>
+          <li class="item">
             <img src="./images/igor-demianenko-photo.jpg" alt="Фото Ігоря Дем'яненка" width="270" />
+            <div class="card"> 
             <h3 class="section-subtitle second">Ігор Дем'яненко</h3>
             <p class="specialty" lang="en">Product Designer</p>
+          </div>
           </li>
-          <li>
+          <li class="item">
             <img src="./images/olga-repina-photo.jpg" alt="Фото Ольги Рєпіної" width="270" />
+            <div class="card">
             <h3 class="section-subtitle second">Ольга Рєпіна</h3>
             <p class="specialty" lang="en">Frontend Developer</p>
+          </div>
           </li>
-          <li>
+          <li class="item">
             <img src="./images/mykola-tarasov-photo.jpg" alt="Фото Миколи Тарасова" width="270" />
+            <div class="card"> 
             <h3 class="section-subtitle second">Микола Тарасов</h3>
             <p class="specialty" lang="en">Marketing</p>
+          </div>
           </li>
-          <li>
+          <li class="item">
             <img src="./images/myhailo-Ermakof-photo.jpg" alt="Фото Михайла Єрмакова" width="270" />
+            <div class="card"> 
             <h3 class="section-subtitle second">Михайло Єрмаков</h3>
             <p class="specialty" lang="en">UI Designer</p>
+          </div>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!--Футер-->
     <footer>
-      <div class="footer">
+      <section class="footer"> 
+      <div class="container">
         <a lang="en" href="./index.html" class="logo footer">
           <span class="logo-accent">Web</span>Studio
         </a>
         <address>
           <ul class="contact">
             <li>
-              <a href="https://goo.gl/maps/BBBDbE12WqsnVFgC6" class="location second"
+              <a href="https://goo.gl/maps/BBBDbE12WqsnVFgC6" 
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="location second"
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
@@ -121,6 +142,7 @@
           </ul>
         </address>
       </div>
+      </section>
     </footer>
   </body>
 </html>

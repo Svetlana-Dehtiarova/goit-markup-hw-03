@@ -21,8 +21,33 @@ background: #2F303A;*/
   --second-background-color: #f5f4fa;
   --hero-background-color: #2f303a;
   --footer-background-color: #2f303a;
-  --footer-phone-color: hsla(0, 0%, 100%, 0.6)
+  --footer-phone-color: hsla(0, 0%, 100%, 0.6);
+  --border-color:  #eeeeee;
+/*----Reset----*/
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+img {
+  display: block;
+}
+/*-----------*/
 body {
   color: var(--primary-text-color);
   background-color: var(--main-lite-color);
@@ -33,6 +58,14 @@ body {
 /* Прибирає "*" з усіх списків */
 ul {
   list-style: none;
+}
+/*Контейнер*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
 }
 /*кольори лого*/
 .logo,
@@ -51,6 +84,10 @@ ul {
   color: var(--accent-color);
 }
 /*Навігація по сайту*/
+.list {
+  padding: 0;
+  margin: 0;
+}
 .site-nav .link {
   color: var(--title-text-color);
   letter-spacing: 0.02em;
@@ -76,7 +113,7 @@ ul {
   color: var(--accent-color);
 }
 /*Герой*/
-.hero {
+.hero { 
   color: var(--main-lite-color);
   background-color: var(--hero-background-color);
   letter-spacing: 0.06em;
@@ -85,9 +122,18 @@ ul {
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 94px;
 }
+/*.hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}*/
+
 /* Секції*/
 /*Головна сторінка*/
+.section {
+  margin-bottom: 94px;
+}
 .section-title,
 .section-subtitle {
   color: var(--title-text-color);
@@ -97,11 +143,13 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 .section-subtitle.first {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .section-subtitle.second {
   font-weight: 500;
@@ -112,6 +160,10 @@ ul {
 .comand-section {
   background-color: var(--second-background-color);
 }
+/*Картки співробітників*/
+.card {
+  padding: 30px 24px;
+}
 /*Сторінка Портфоліо*/
 .section-title.second {
   letter-spacing: 0.06em;
@@ -119,17 +171,35 @@ ul {
   font-size: 18px;
   line-height: 2;
   text-align: inherit;
+  margin-bottom: 4px;
+}
+.works {
+  margin: 94px 0px;
+}
+.total-projects {
+  margin-top: 34px;
+  margin-bottom: 0;
+}
+.block {
+  margin-bottom: 30px;
+  border: 1px solid var(--border-color);
+}
+.info-block {
+  margin: 20px 24px;
 }
 /*Кнопка*/
 .button {
+  display: inline-block;
   color: var(--title-text-color);
   background-color: var(--second-background-color);
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  cursor: pointer;
+  border: 0 solid transparent;
+    border-radius: 4px;
+    min-width: 73px;
+    padding: 6px 22px;
 }
 .button:hover,
 .button:focus {
@@ -137,18 +207,20 @@ ul {
   background-color: var(--accent-color);
 }
 .primary-button {
+  display: inline-block;
   color: var(--main-lite-color);
   background-color: var(--accent-color);
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  min-width: 216px;
   cursor: pointer;
-  text-align: center;
     margin-top: 30px;
     padding: 10px 32px;
     border: 0 solid transparent;
     border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button.second {
   color:var(--main-lite-color);
@@ -163,6 +235,7 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-top: 10px;
 }
 .projects {
   font-size: 16px;
@@ -175,16 +248,26 @@ ul {
 .logo.footer {
   color: var(--main-lite-color);
 }
+.logo.footer,
+.logo-accent {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
 .location.second{
   line-height: 1.71;
   font-style: normal;
   color: var(--main-lite-color);
+  margin-bottom: 9px;
 }
 .phone.second,
 .e-mail.second {
   line-height: 1.71;
   font-style: normal;
   color: var(--footer-phone-color);
+}
+.phone.second {
+  margin-bottom: 9px;
 }
 .location.second:hover,
 .location.second:focus,
