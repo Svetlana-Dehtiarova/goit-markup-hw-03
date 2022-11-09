@@ -21,7 +21,7 @@
     <!--Шапка-->
     <header>
       <div class="container main-nav">
-        <nav>
+        <nav class="main-nav">
           <a lang="en" href="./index.html" class="logo">
             <span class="logo-accent">Web</span>Studio
           </a>
@@ -33,20 +33,22 @@
         </nav>
         <ul class="contacts list">
           <li class="item-one"><a href="tel:+380961111111" class="phone">+38 096 111 11 11</a></li>
-          <li class="item-one"><a href="mailto:info@devstudio.com" class="e-mail">info@devstudio.com</a></li>
+          <li class="item-one">
+            <a href="mailto:info@devstudio.com" class="e-mail">info@devstudio.com</a>
+          </li>
         </ul>
       </div>
     </header>
     <main>
       <!--Герой-->
       <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <h1 class="hero-title">Ефективні рішення<br />для вашого бізнесу</h1>
         <button type="button" class="primary-button">Замовити послугу</button>
       </section>
       <!--Наші переваги-->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Наші переваги</h2>
+          <h2 class="section-title visually-hidden">Наші переваги</h2>
           <ul class="feature-list">
             <li>
               <h3 class="section-subtitle first">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -77,10 +79,16 @@
         <!--Чим ми займаємося-->
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul>
-            <li><img src="./images/box-1.jpg" alt="Фото Десктопні додатки" width="370" /></li>
-            <li><img src="./images/box-2.jpg" alt="Фото Мобільні додатки" width="370" /></li>
-            <li><img src="./images/box-3.jpg" alt="Фото Дизайнерські рішення" width="370" /></li>
+          <ul class="img-box">
+            <li class="image-first">
+              <img src="./images/box-1.jpg" alt="Фото Десктопні додатки" width="370" />
+            </li>
+            <li class="image-first">
+              <img src="./images/box-2.jpg" alt="Фото Мобільні додатки" width="370" />
+            </li>
+            <li class="image-first">
+              <img src="./images/box-3.jpg" alt="Фото Дизайнерські рішення" width="370" />
+            </li>
           </ul>
         </div>
       </section>
@@ -88,7 +96,7 @@
         <!--Наша команда-->
         <h2 class="section-title">Наша команда</h2>
         <div class="container">
-          <ul>
+          <ul class="our-comand">
             <li class="item">
               <img
                 src="./images/igor-demianenko-photo.jpg"
